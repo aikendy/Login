@@ -1,0 +1,9 @@
+mat-dialog-content {
+    font-family: Arial, sans-serif;
+  }
+  
+  mat-dialog-content img {
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  

@@ -1,0 +1,71 @@
+/* Ajustes para el body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: -webkit-linear-gradient(96deg, #cda3a8,#ffd6db,#dfa9b0);background: linear-gradient(96deg, #cda3a8,#ffd6db,#dfa9b0);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: flex-start; /* Posiciona contenido más arriba */
+  min-height: 100vh; /* Cubre toda la altura de la ventana */
+  padding-top: 50px; /* Agrega espacio en la parte superior */
+}
+
+/* Contenedor principal de usuario */
+.user-container {
+  margin: 20px auto;
+  max-width: 500px; /* Ancho más grande */
+  text-align: center;
+  color: #430b4a;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Tarjeta de usuario */
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Espaciado interno mayor */
+  border-radius: 15px; /* Bordes más redondeados */
+  background: linear-gradient(135deg, #fdfdfd, #e5dedd); /* Fondo degradado */
+  color: #430b4a; /* Texto blanco */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+}
+
+/* Efecto hover */
+.user-card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Avatar del usuario */
+.user-avatar {
+  width: 150px; /* Tamaño mayor */
+  height: 150px; /* Tamaño mayor */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.8); /* Borde blanco */
+}
+
+/* Detalles del usuario */
+.user-details {
+  text-align: left;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.user-details p {
+  margin: 10px 0;
+  font-size: 18px; /* Tamaño del texto mayor */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Mensaje para usuario no autenticado */
+.no-user {
+  color: #666;
+  font-size: 18px; /* Tamaño del texto mayor */
+  text-align: center;
+  padding: 20px;
+}

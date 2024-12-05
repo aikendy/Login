@@ -1,0 +1,15 @@
+<body>
+<div class="user-container" *ngIf="user">
+    <h2>Información del Usuario</h2>
+    <div class="user-card">
+      <img [src]="user.avatar" alt="Foto de {{ user.name }}" class="user-avatar" />
+      <div class="user-details">
+        <p><strong>Nombre:</strong> {{ user.name }}</p>
+        <p><strong>Correo:</strong> {{ user.email }}</p>
+      </div>
+    </div>
+  </div>
+  <ng-container *ngIf="!user">
+    <p>No se encontró información del usuario autenticado.</p>
+  </ng-container>
+</body>

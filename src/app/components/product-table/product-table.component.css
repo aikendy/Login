@@ -1,0 +1,147 @@
+/* Barra de herramientas (Toolbar) */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #E0958B; /* Fondo personalizado */
+  color: white; /* Texto legible */
+  height: 64px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* Botones de la barra de herramientas */
+button.mat-button {
+  background-color: #c9449a !important; /* Fondo rosa intenso */
+  color: #ffffff !important; /* Texto blanco */
+  border: none !important; /* Sin bordes */
+  border-radius: 12px !important; /* Bordes redondeados */
+  padding: 10px 20px !important; /* Espaciado interno */
+  font-size: 16px !important; /* Tamaño del texto */
+  font-weight: bold !important; /* Texto en negrita */
+  cursor: pointer !important; /* Cursor tipo mano */
+  text-align: center !important; /* Centrado del texto */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2) !important; /* Sombra */
+  transition: all 0.3s ease !important; /* Animación suave */
+}
+
+/* Efecto hover para los botones de la barra */
+button.mat-button:hover {
+  background-color: #a8357f !important; /* Fondo más oscuro */
+  transform: scale(1.05) !important; /* Efecto de agrandamiento */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3) !important; /* Sombra más pronunciada */
+}
+
+/* Botón "Buscar" */
+button.mat-raised-button {
+  background-color: #c9449a !important; /* Fondo rosa intenso */
+  color: #ffffff !important; /* Texto blanco */
+  border: none !important; /* Sin bordes */
+  border-radius: 12px !important; /* Bordes redondeados */
+  padding: 10px 20px !important; /* Espaciado interno */
+  font-size: 14px !important; /* Tamaño del texto */
+  font-weight: bold !important; /* Texto en negrita */
+  cursor: pointer !important; /* Cursor tipo mano */
+  text-align: center !important; /* Centrado del texto */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2) !important; /* Sombra */
+  transition: all 0.3s ease !important; /* Animación suave */
+}
+
+button.mat-raised-button:hover {
+  background-color: #a8357f !important; /* Fondo más oscuro */
+  transform: scale(1.05) !important; /* Efecto de agrandamiento */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3) !important; /* Sombra más pronunciada */
+}
+
+button.mat-raised-button:active {
+  background-color: #922d6f !important; /* Fondo más oscuro al presionar */
+  transform: translateY(2px) !important; /* Efecto de presionado */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) !important; /* Sombra reducida */
+}
+
+/* Botones de acción en la tabla */
+button[mat-icon-button] {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF6F61; /* Fondo coral */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+button[mat-icon-button]:hover {
+  background-color: #E95E50; /* Fondo coral más oscuro */
+  transform: scale(1.1); /* Agrandar botón */
+}
+
+.mat-icon {
+  font-size: 20px;
+  color: #ffffff; /* Ícono blanco */
+}
+
+/* Ajuste de tamaño para las imágenes en la tabla */
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Contenedor del filtro */
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #E6E6FA; /* Fondo claro */
+  padding: 15px;
+  border-radius: 8px;
+  margin: 16px auto;
+  max-width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Estilo para campos de filtro */
+mat-form-field {
+  background-color: #E6E6FA; /* Fondo claro */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno */
+  flex: 1; /* Campos adaptables */
+}
+
+mat-form-field input,
+mat-form-field select {
+  color: #333333; /* Texto en color oscuro */
+  background-color: #ffffff00; /* Fondo blanco */
+  border-radius: 4px;
+}
+
+mat-form-field input::placeholder {
+  color: #999999; /* Placeholder gris */
+}
+
+.mat-select-arrow {
+  color: #E0958B; /* Color de la flecha */
+}
+
+/* Cambiar el fondo y color de las opciones */
+.mat-option {
+  background-color: #f3e5f5 !important; /* Fondo lila claro */
+  color: #4a148c !important; /* Texto violeta oscuro */
+}
+
+.mat-option:hover {
+  background-color: #d1c4e9 !important; /* Fondo lila más oscuro */
+  color: #1a237e !important; /* Texto azul oscuro */
+}
+
+.mat-option.mat-selected {
+  background-color: #7e57c2 !important; /* Fondo violeta */
+  color: white !important; /* Texto blanco */
+}

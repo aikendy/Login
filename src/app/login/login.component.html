@@ -1,0 +1,53 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-title>Bienvenido</mat-card-title>
+    <mat-card-subtitle>Inicia sesión para continuar</mat-card-subtitle>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <!-- Email -->
+        <mat-form-field appearance="outline">
+          <mat-label>Correo electrónico</mat-label>
+          <input matInput type="email" formControlName="email" required />
+          <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+            El correo es obligatorio.
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('email')?.hasError('email')">
+            Ingresa un correo válido.
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Contraseña -->
+        <mat-form-field appearance="outline">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" formControlName="password" required />
+          <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+            La contraseña es obligatoria.
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">
+            La contraseña debe tener al menos 6 caracteres.
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Confirmación de contraseña -->
+        <mat-form-field class="custom-field" appearance="outline">
+          <mat-label>Confirmar contraseña</mat-label>
+          <input matInput type="password" formControlName="confirmPassword" />
+          <mat-error *ngIf="loginForm.get('confirmPassword')?.hasError('required')">
+            La confirmación de contraseña es obligatoria.
+          </mat-error>
+          <mat-error *ngIf="loginForm.hasError('passwordsMismatch')">
+            Las contraseñas no coinciden.
+          </mat-error>
+        </mat-form-field>
+        
+        <!-- Botón de enviar -->
+        <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">
+          Iniciar Sesión
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-footer>
+      <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </mat-card-footer>
+  </mat-card>
+</div>

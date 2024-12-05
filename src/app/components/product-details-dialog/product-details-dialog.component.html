@@ -1,0 +1,9 @@
+<mat-dialog-content>
+  <h2>Detalles del Producto</h2>
+  <p><strong>Nombre:</strong> {{ data.title }}</p>
+  <p><strong>Precio:</strong> {{ data.price | currency }}</p>
+  <img [src]="data.images[0]" alt="{{ data.title }}" style="width: 100%; max-height: 300px;" />
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cerrar</button>
+</mat-dialog-actions>

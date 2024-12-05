@@ -1,0 +1,112 @@
+.login-container {
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background: -webkit-linear-gradient(96deg, #cda3a8,#ffd6db,#dfa9b0);background: linear-gradient(96deg, #cda3a8,#ffd6db,#dfa9b0);}
+
+
+mat-card {
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  background-color: rgb(162, 220, 103); /* Fondo del formulario */
+}
+
+
+.login-card {
+  max-width: 400px;
+  margin: 50px auto; /* Centrado */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #ffffff; /* */
+  animation: fadeIn 0.9s ease-in-out; /* Animación */
+}
+
+input {
+  border: 8px solid #430b4a; /* Cambia el color del borde según tu preferencia */
+  border-radius: 5px; /* Ajusta el redondeo de las esquinas si es necesario */
+
+
+}
+input:focus {
+  outline: none; /* Elimina el contorno azul por defecto en algunos navegadores */
+ 
+
+}
+
+
+/* Títulos */
+mat-card-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6D2175;
+}
+
+mat-card-subtitle {
+  text-align: center;
+  font-size: 19px;
+  color: #9b457e;
+  margin-bottom: 20px;
+}
+
+/* Campos del formulario */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+mat-form-field.appearance-outline {
+  border-radius: 20px;
+}
+
+/* Botón de envío */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #6D2175;
+  transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Enlace de "Olvidaste tu contraseña" */
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #75215c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #6D2175; /* Azul más oscuro */
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
